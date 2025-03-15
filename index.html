@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be Mine? 💖</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        body {
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            background: url('https://source.unsplash.com/1600x900/?love,valentine') no-repeat center center/cover;
+            color: rgb(0, 0, 0);
+        }
+        h1 {
+            margin-top: 100px;
+            font-size: 40px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+        #buttons {
+            margin-top: 30px;
+        }
+        .btn {
+            padding: 15px 40px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 50px;
+        }
+        .yes-btn {
+            background-color: #ff1493;
+            color: white;
+            box-shadow: 0px 0px 10px #ff1493;
+        }
+        .no-btn {
+            background-color: black;
+            color: white;
+        }
+        .hearts {
+            position: absolute;
+            animation: float 3s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(-100px); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+<h1>
+    <span class="highlight">Will</span>
+    <span class="highlight">You</span>
+    <span class="highlight">Be</span>
+    <span class="highlight">My</span>
+    <span class="highlight">Valentine?</span>
+    <span class="highlight">💕</span>
+</h1>
+
+
+
+    <div id="buttons">
+        <button class="btn yes-btn" onclick="accepted()">Yes</button>
+        <button class="btn no-btn" onclick="redirectToSecond()">No</button>
+    </div>
+
+    <script>
+        function accepted() {
+            window.location.href = "love-message.html";
+
+        }
+
+        function redirectToSecond() {
+            window.location.href = "second.html";
+        }
+    </script>
+</body>
+</html>

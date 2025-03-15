@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Escape! 😆</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+        .highlight {
+            background-color: black; /* Change to black highlight */
+            color: white; /* Change font color to white */
+            padding: 2px; /* Add some padding for better visibility */
+        }
+
+
+        body {
+            text-align: center;
+            font-family: 'Indie Flower', cursive;
+            background: url('https://source.unsplash.com/1600x900/?cupid,love') no-repeat center center/cover;
+            color: rgb(0, 0, 0);
+        }
+        h1 {
+            margin-top: 100px;
+            font-size: 40px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+        .btn {
+            padding: 15px 40px;
+            font-size: 22px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: 0.3s;
+            background-color: red;
+            color: rgb(249, 248, 248);
+            box-shadow: 0px 0px 10px red;
+        }
+        #videoContainer {
+            display: none;
+            margin-top: 30px;
+        }
+        video {
+            width: 80%;
+            max-width: 720px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgb(255, 254, 254);
+        }
+    </style>
+</head>
+<body>
+<h1>
+    W i l l   Y o u   B e   M y   V a l e n t i n e? 💕
+</h1>
+
+
+
+
+    <button class="btn" onclick="openVideoPage()">Yes soldratha thavara unku vera option ila diii</button>
+
+    <div id="videoContainer">
+        <video id="proposalVideo" controls>
+            <source src="VaaKannamma.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        function playVideo() {
+            document.getElementById("videoContainer").style.display = "block";
+            let video = document.getElementById("proposalVideo");
+            video.play();
+        }
+
+        function openVideoPage() {
+            window.open("video.html", "_blank", "width=800,height=450");
+        }
+    </script>
+</body>
+</html>
